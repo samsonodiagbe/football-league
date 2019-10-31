@@ -1,19 +1,31 @@
 import React, { Component } from "react";
-import Fixture from "./objects/fixture";
-import Team from "./objects/team";
+import "./styles/football.css";
+import teams from "./objects/teams";
+import fixtures from "./objects/fixtures";
+import League from "./objects/league";
+import LiveScore from "./components/blocks/live-score-board";
+import Standings from "./components/blocks/standings";
 
 class Football extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            league: new League(fixtures, teams),
+            matchday: 0
+        };
     }
 
+    componentDidMount() {}
+
     render() {
-        const fixture1 = new Fixture(
-            new Team("Man U", "", "Old Trafford"),
-            new Team("Man city", "", "Ethihad")
+        const { league, matchday } = this.state;
+        const standings = league.getStandings();
+        return (
+            <div className='football-league'>
+                <LiveScore matches={league.getFixtures(matchday)} />
+                <Standings standings={standings} />
+            </div>
         );
-        console.log(fixture1.home_ground);
-        return null;
     }
 }
 

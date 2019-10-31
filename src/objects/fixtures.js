@@ -106,7 +106,7 @@ export default [
         new Fixture(Everton, Manchester_city),
         new Fixture(Leicester_city, Newcastle_united),
         new Fixture(Manchester_United, Arsenal),
-        new Fixture(Wolves, Watford)
+        new Fixture(Wolvershampton, Watford)
     ],
     [
         new Fixture(Brighton, Tottenham),
@@ -289,7 +289,7 @@ export default [
         new Fixture(Aston_villa, Manchester_city)
     ],
     [
-        new Fixture(Watfor, Tottenham),
+        new Fixture(Watford, Tottenham),
         new Fixture(Brighton, Aston_villa),
         new Fixture(Manchester_city, Crystal_palace),
         new Fixture(West_ham, Everton),
@@ -435,7 +435,7 @@ export default [
     [
         new Fixture(Manchester_United, Southampton),
         new Fixture(Liverpool, Burnley),
-        new Fixture(Wolves, Everton),
+        new Fixture(Wolvershampton, Everton),
         new Fixture(Sheffield_united, Chelsea),
         new Fixture(Bournemouth, Leicester_city),
         new Fixture(Brighton, Manchester_city),

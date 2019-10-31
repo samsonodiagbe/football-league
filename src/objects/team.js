@@ -1,9 +1,9 @@
 class Team {
     constructor(name, emblem, home_ground) {
-        this._name = name;
-        this._emblem = emblem;
-        this._home_ground = home_ground;
-        this._data = {
+        this.name = name;
+        this.emblem = emblem;
+        this.home_ground = home_ground;
+        this.data = {
             played: 0,
             win: 0,
             draw: 0,
